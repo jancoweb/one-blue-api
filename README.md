@@ -96,7 +96,7 @@ CREATE TABLE IF NOT EXISTS pensamentos (
 );
 ```
 
-#### Rotas e Endpoints - Usuário
+## Rotas e Endpoints - Usuário
 
 - Cadastro de usuário:
   
