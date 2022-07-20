@@ -8,13 +8,13 @@ const editarPost = async (req, res)=>{
   if(!conteudo) return res.status(400).json('O campo não pode estar vazio');
 
   try {
-    const query = 'select * from pensamentos where id = $1 and usuario_id = $2';
+    const query = 'select conteudo from pensamentos where id = $1 and usuario_id = $2';
     const post = await conexao.query(query, [idPost, idUsuario]);
 
     if(post.rowCount === 0) return res.status(401).json('Não autorizado');
 
     const attQuery = 'update pensamentos set conteudo = $1 where id = $2';
-    const attPost = await conexao.query(attQuery, [conteudo, idPost]);
+    await conexao.query(attQuery, [conteudo, idPost]);
 
     return res.status(201).send()
   } catch (e) {
