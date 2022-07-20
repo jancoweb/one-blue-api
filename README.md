@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS usuarios (
   senha TEXT NOT NULL
 );
 
-CREATE TABLE pensamentos (
+CREATE TABLE IF NOT EXISTS pensamentos (
   id SERIAL PRIMARY KEY,
   usuario_id INT NOT NULL,
   conteudo TEXT NOT NULL,
