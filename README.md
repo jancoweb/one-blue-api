@@ -68,6 +68,8 @@ Funcionalidades:
 
 - Visualizar pensamentos
 
+- Curtir pensamentos
+
 
 
 **Banco de dados**
