@@ -23,7 +23,7 @@ rotas.delete('/perfil/excluir-conta', auth, excluirCadastro);
 rotas.post('/publicar', auth, criarPost);
 rotas.get('/perfil/posts', auth, listarPostUsuario);
 rotas.put('/perfil/posts/editar/:id', auth, editarPost);
-rotas.get('/home/posts', auth, listarPosts);
+rotas.get('/posts', auth, listarPosts);
 rotas.patch('/curtir/:id', auth, curtirPost);
 rotas.delete('/perfil/posts/excluir/:id', auth, excluirPost);
 
